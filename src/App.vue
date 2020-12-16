@@ -2,17 +2,20 @@
   <div id="app">
 <!--    <div style="height: 20px"></div>-->
     <LoginAndRegistered></LoginAndRegistered>
+    <Search></Search>
+    <play></play>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-
 import LoginAndRegistered from "@/components/LoginAndRegistered";
+import Search from "@/components/Search/Search";
+import play from "@/components/play";
 export default {
   name: 'App',
   components: {
-    LoginAndRegistered,
+ Search,LoginAndRegistered,play,
   }
 }
 </script>
@@ -24,5 +27,10 @@ export default {
   text-decoration: none;
   list-style: none;
   border: none;
+
+  /*font-family: MicrosoftYaHeiUI;*/
+}
+img{
+  cursor: pointer;
 }
 </style>
