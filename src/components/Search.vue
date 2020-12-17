@@ -18,9 +18,9 @@
         </div>
       </div>
       <div class="underslid">
-        <img src="../../assets/img/搜索界面/筛选(1).png" height="21" width="18" class="underimg"/><span>筛选</span>
-       <img src="../../assets/img/搜索界面/列表式排列.png" height="23" width="23" class="underimg1 underimg"/>
-        <img src="../../assets/img/搜索界面/方格排列.png" height="23" width="24" class="underimg"/></div>
+        <img src="../assets/img/搜索界面/筛选(1).png" height="21" width="18" class="underimg"/><span>筛选</span>
+       <img src="../assets/img/搜索界面/列表式排列.png" height="23" width="23" class="underimg1 underimg"/>
+        <img src="../assets/img/搜索界面/方格排列.png" height="23" width="24" class="underimg"/></div>
      </div>
     <ul>
       <li class="repeat" v-for="(item,index) in first" :key="index" :class="{color : judge2[index] }" @click="number1( index )">{{item}}</li>
@@ -50,17 +50,17 @@
       </div>
     </div>
     <div class="switch">
-      <img src="../../assets/img/搜索界面/左.png" height="27" width="27"  class="switchimg">
+      <img src="../assets/img/搜索界面/左.png" height="27" width="27"  class="switchimg">
       <button class="switchbtn">1</button>
       <button class="switchbtn">2</button>
       <button class="switchbtn">3</button>
       <button class="switchbtn">4</button>
-      <img src="../../assets/img/搜索界面/省略号.png" height="8" width="43" class="switchimgcentet">
+      <img src="../assets/img/搜索界面/省略号.png" height="8" width="43" class="switchimgcentet">
 
       <button class="switchbtn">48</button>
       <button class="switchbtn">49</button>
       <button class="switchbtn">50</button>
-      <img src="../../assets/img/搜索界面/右.png" height="27" width="27" class="switchimg">
+      <img src="../assets/img/搜索界面/右.png" height="27" width="27" class="switchimg">
 
       <span>跳转到 <input type="text">页</span>
     </div>
@@ -73,8 +73,8 @@ export default {
 name: "Search",
   data(){
   return{
-    tv: require('../../assets/img/搜索界面/bilibili-line.png'),
-    blibli:require('../../assets/img/搜索界面/BILIBILI_LOGO.png'),
+    tv: require('../assets/img/搜索界面/bilibili-line.png'),
+    blibli:require('../assets/img/搜索界面/BILIBILI_LOGO.png'),
     li:['综合','视频 99+','番剧 0','影视 5','直播 0','专栏 99+','频道 99+','用户 99+'],
     judge1:[ false ,true,false,false,false,false,false,false ],
     n:0,
@@ -90,114 +90,114 @@ name: "Search",
     eight:[
 
       {
-        img:require('../../assets/img/图片/2.jpg'),
+        img:require('../assets/img/图片/2.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'web无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },
       {
-        img:require('../../assets/img/图片/1.jpeg'),
+        img:require('../assets/img/图片/1.jpeg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'UI无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },
       {
-        img:require('../../assets/img/图片/3.jpg'),
+        img:require('../assets/img/图片/3.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'UI无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },
       {
-        img:require('../../assets/img/图片/4.jpg'),
+        img:require('../assets/img/图片/4.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'UI无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },
       {
-        img:require('../../assets/img/图片/5.jpeg'),
+        img:require('../assets/img/图片/5.jpeg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'UI无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },
       {
-        img:require('../../assets/img/图片/10.jpg'),
+        img:require('../assets/img/图片/10.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'UI无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },
       {
-        img:require('../../assets/img/图片/11.jpg'),
+        img:require('../assets/img/图片/11.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'UI无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },
       {
-        img:require('../../assets/img/图片/8.jpg'),
+        img:require('../assets/img/图片/8.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
-        person:require('../../assets/img/搜索界面/个人 (4).png'),
+        person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
         people:'UI无敌',
-        palyimg:require('../../assets/img/搜索界面/播视web_播放量.png'),
+        palyimg:require('../assets/img/搜索界面/播视web_播放量.png'),
         play:'5.6万',
-        timeimg:require('../../assets/img/搜索界面/历史时间-2.png'),
+        timeimg:require('../assets/img/搜索界面/历史时间-2.png'),
         time:'2001-1-1',
-        goodimg:require('../../assets/img/搜索界面/点赞.png'),
+        goodimg:require('../assets/img/搜索界面/点赞.png'),
         good:'121'
 
       },

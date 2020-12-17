@@ -1,5 +1,9 @@
 <template>
+
 <div id="LoginAndRegistered">
+  <div class="background">
+    <img src="../assets/img/登录和注册/bilibili.png" height="89" width="199"/>
+  </div>
   <div id="Relative">
     <div class="control">
       <button @click="login"  class="btn" :class="{  btn1 : isActive  , btn2: really} ">登录</button>
@@ -51,13 +55,16 @@ name: "LoginAndRegistered",
 <style scoped>
 #LoginAndRegistered{
   background-color: #343434;
-  height: 953px;
+  height: 1100px;
+  position: relative;
+}
+.Relative{
   position: relative;
 }
 .control{
   width: 250px;
   position: absolute;
-  top: 114px;
+  top: 200px;
   left: 0;
   right: 0;
   margin: auto;
@@ -78,5 +85,16 @@ name: "LoginAndRegistered",
   line-height: 43px;
   background-color: #343434;
   outline: none;
+}
+.background{
+  background-image: url("../assets/img/登录和注册/xkxk.png");
+  /*margin-left:25px ;*/
+  height: 104px;
+
+}
+.background>img{
+  position: absolute;
+  left: 70px;
+  top: 10px;
 }
 </style>

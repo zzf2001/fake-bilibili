@@ -8,9 +8,9 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+
 import LoginAndRegistered from "@/components/LoginAndRegistered";
-import Search from "@/components/Search/Search";
+import Search from "@/components/Search";
 import play from "@/components/play";
 export default {
   name: 'App',
