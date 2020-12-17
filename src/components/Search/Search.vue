@@ -11,7 +11,7 @@
       </div>
       <div class="relative">
         <ul class="firstul">
-          <li v-for="(item,index) in li " :key="index" class="li"  @mouseenter="hover(index)" @mouseleave="reduction" :class="{firstcheck: really}">{{item}}</li>
+          <li v-for="(item,index) in li " :key="index" class="li"  @mouseenter="hover(index)" @mouseleave="reduction" :class="{firstcheck: really}" @click="transform(index)">{{item}}</li>
         </ul>
         <div class="slid">
           <div class="transform" :style="change"></div>
@@ -19,18 +19,18 @@
       </div>
       <div class="underslid">
         <img src="../../assets/img/搜索界面/筛选(1).png" height="21" width="18" class="underimg"/><span>筛选</span>
-       <img src="../../assets/img/搜索界面/列表式排列.png" height="23" width="23" class="underimg"/>
+       <img src="../../assets/img/搜索界面/列表式排列.png" height="23" width="23" class="underimg1 underimg"/>
         <img src="../../assets/img/搜索界面/方格排列.png" height="23" width="24" class="underimg"/></div>
      </div>
     <ul>
-      <li class="repeat" v-for="(item,index) in first" :key="index">{{item}}</li>
+      <li class="repeat" v-for="(item,index) in first" :key="index" :class="{color : judge2[index] }" @click="number1( index )">{{item}}</li>
     </ul>
     <ul>
-      <li class="repeat" v-for="(item,index) in secend" :key="index">{{item}}</li>
+      <li class="repeat" v-for="(item,index) in secend" :key="index" @click="number2( index )" :class="{color : judge3[index] }">{{item}}</li>
     </ul>
     <ul >
-      <li class="special repeat" v-for="(item,index) in third" :key="index">{{item}}</li>
-    </ul>
+      <li class="special repeat" v-for="(item,index) in third" :key="index" @click="number3( index )" :class="{color : judge4[index] }">{{item}}</li>
+    </ul>`
     <div class="footer">
       <div class="eightdiv" v-for="(item,index) in eight" :key="index">
         <img :src="item.img" alt="" class="img">
@@ -50,8 +50,19 @@
       </div>
     </div>
     <div class="switch">
+      <img src="../../assets/img/搜索界面/左.png" height="27" width="27"  class="switchimg">
+      <button class="switchbtn">1</button>
+      <button class="switchbtn">2</button>
+      <button class="switchbtn">3</button>
+      <button class="switchbtn">4</button>
+      <img src="../../assets/img/搜索界面/省略号.png" height="8" width="43" class="switchimgcentet">
 
+      <button class="switchbtn">48</button>
+      <button class="switchbtn">49</button>
+      <button class="switchbtn">50</button>
+      <img src="../../assets/img/搜索界面/右.png" height="27" width="27" class="switchimg">
 
+      <span>跳转到 <input type="text">页</span>
     </div>
   </div>
 </div>
@@ -71,8 +82,11 @@ name: "Search",
     check:0,
     really : false,
     first:['综合排序','最多点击',"最多发布",'最多弹幕','最多收藏'],
+    judge2:[ false ,true,false,false,false, ],
     secend:['全部时长','10分钟以下','10~30分钟','30~60分钟','60分钟以上'],
+    judge3:[ false ,true,false,false,false, ],
     third:['全部分区','动画','番剧','国创','音乐','舞蹈','游戏','数码','生活','美食','鬼畜','时尚','资讯','娱乐','影视','纪录片','电影','电视剧','其他'],
+    judge4:[ false ,true,false,false,false,false,false,false ,false ,false,false,false,false,false ,false,false,false,false,false],
     eight:[
 
       {
@@ -193,6 +207,27 @@ name: "Search",
   }
   },
   methods:{
+    transform(index){
+      this.check = index
+    },
+  number1(index){
+    let i;
+    for(i=0;i<5;i++)
+      this.$set(this.judge2,i,false)
+    this.$set(this.judge2,index,true)
+  },
+    number2(index){
+      let i;
+      for(i=0;i<5;i++)
+        this.$set(this.judge3,i,false)
+      this.$set(this.judge3,index,true)
+    },
+    number3(index){
+      let i;
+      for(i=0;i<20;i++)
+        this.$set(this.judge4,i,false)
+      this.$set(this.judge4,index,true)
+    },
   hover(index) {
     this.n = index
 
@@ -301,6 +336,7 @@ ul{
   text-align: center;
   margin-top: 5px;
   color: #868686;
+  cursor: pointer;
 
 }
 .special:nth-child(1)
@@ -318,6 +354,7 @@ ul{
   /*justify-content: space-around;*/
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .eightdiv{
   width: 320px;
@@ -348,9 +385,65 @@ ul{
   color: #707070;
   font-size: 14px;
   padding-left: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .left{
   margin-left: 5px;
+}
+.switchbtn{
+  width: 28px;
+  height: 28px;
+  background-color: #A8A8A8;
+  border-radius: 50%;
+ margin: 20px;
+  outline: none;
+  color: white;
+}
+.switchbtn:nth-child(1){
+  background-color: #FFB100;
+}
+.switchimg{
+  margin-top:20px ;
+  /*position: absolute;*/
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.switch{
+  display: flex;
+  position: absolute;
+  /*top: 20px;*/
+  left: 0;
+  right: 0;
+  width: 750px;
+  margin: auto;
+
+}
+.switchimgcentet{
+  margin-top: 30px;
+}
+.switch>span>input{
+  width: 29px;
+  height: 15px;
+  background: #707070;
+  border-radius: 8px;
+  outline: none;
+
+}
+.switch>span{
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-top: 28px;
+  margin-left: 10px;
+}
+.underimg{
+  margin: 20px;
+}
+.underimg1
+{
+  margin-left: 45px!important;
+}
+.underslid>span{
+position: absolute;
+  top:170px
 }
 </style>

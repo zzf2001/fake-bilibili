@@ -60,6 +60,7 @@
               {{item.people}}
               <span class="lileft"><img src="" alt="">{{item.long}}</span>
             </div>
+            <img src="../assets/img/播放页面/赞.png" alt="" class="recommendimg">
             <p>{{item.tilte}}</p>
             <p>{{item.pag}}</p>
           </li>
@@ -85,6 +86,16 @@
           <img src="../assets/img/播放页面/踩.png" alt="">
         </div>
         </div>
+      </div>
+      <div class="swich">
+        <span>&lt;</span>
+        <button class="spesical swichbtn">1</button>
+        <button class="swichbtn">2</button>
+        <button class="swichbtn">3</button>
+        <button class="swichbtn">4</button>
+        <p>...</p>
+        <button class="swichbtn">10</button>
+        <span>&gt;</span>
       </div>
     </div>
     <div class="LeftandRighe">
@@ -462,10 +473,12 @@ span>button{
   top: 125px;
   color: white;
   font-size: 9px;
+  box-sizing: border-box;
+  padding-left: 20px;
 
 }
 .lileft{
-  margin-left:120px ;
+  margin-left:110px ;
 
 }
 .Comh{
@@ -554,5 +567,32 @@ textarea::placeholder{
 }
 .good>img{
   margin: 10px;
+}
+.swich{
+  display: flex;
+  color: white;
+  font-size: 24px;
+}
+.swichbtn{
+  width: 31px;
+  height: 34px;
+
+  border-radius: 8px;
+  background-color:  #343434;
+  color: white;
+  font-size: 24px;
+  outline: none;
+}
+.spesical{
+  background-color:#F9D011 ;
+}
+.recommendimg{
+  width: 12px;
+  position: absolute;
+  left: 10px;
+  top: 125px;
+}
+.relative>ul>li{
+  cursor: pointer;
 }
 </style>

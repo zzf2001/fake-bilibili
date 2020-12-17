@@ -33,4 +33,7 @@ export default {
 img{
   cursor: pointer;
 }
+button{
+  cursor: pointer;
+}
 </style>
