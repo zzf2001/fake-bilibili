@@ -90,7 +90,7 @@ name: "Search",
     eight:[
 
       {
-        img:require('../assets/img/图片/2.jpg'),
+        img:require('../assets/img/图片/17c110d7ef6cb037fcc5ef1c4be7e9bd.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
@@ -104,7 +104,7 @@ name: "Search",
 
       },
       {
-        img:require('../assets/img/图片/1.jpeg'),
+        img:require('../assets/img/图片/4db0c456b24cb22da43331d0aa9a9c2b.jpeg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
@@ -118,7 +118,7 @@ name: "Search",
 
       },
       {
-        img:require('../assets/img/图片/3.jpg'),
+        img:require('../assets/img/图片/88bfcd9da7d1d487c28b60de957e390b.jpeg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
@@ -132,7 +132,7 @@ name: "Search",
 
       },
       {
-        img:require('../assets/img/图片/4.jpg'),
+        img:require('../assets/img/图片/7e14dc6ea0305a50bdb3762a98b8dbaf.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
@@ -146,7 +146,7 @@ name: "Search",
 
       },
       {
-        img:require('../assets/img/图片/5.jpeg'),
+        img:require('../assets/img/图片/07df915568cc950fb12d2fc22a317a0e.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
@@ -160,7 +160,7 @@ name: "Search",
 
       },
       {
-        img:require('../assets/img/图片/10.jpg'),
+        img:require('../assets/img/图片/17c110d7ef6cb037fcc5ef1c4be7e9bd.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
@@ -174,7 +174,7 @@ name: "Search",
 
       },
       {
-        img:require('../assets/img/图片/11.jpg'),
+        img:require('../assets/img/图片/17c110d7ef6cb037fcc5ef1c4be7e9bd.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
@@ -188,7 +188,7 @@ name: "Search",
 
       },
       {
-        img:require('../assets/img/图片/8.jpg'),
+        img:require('../assets/img/图片/17c110d7ef6cb037fcc5ef1c4be7e9bd.jpg'),
         title:'慎入！千万不要在网络上搜索这些词……',
         person:require('../assets/img/搜索界面/个人 (4).png'),
         worker:'作者',
